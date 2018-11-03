@@ -34,11 +34,18 @@ def welcome():
     """List all available api routes."""
     return (
         f"Available Routes:<br/>"
+        f"<br/>"
         f"/api/v1.0/precipitation<br/>"
+        f"<br/>"
         f"/api/v1.0/stations<br/>"
+        f"<br/>"
         f"/api/v1.0/tobs<br/>"
-        f"/api/v1.0/<start><br/>"
-        f"/api/v1.0/<start>/<end>"
+        f"<br/>"
+        f"/api/v1.0/start_date<br/>"
+        f"----- Example: /api/v1.0/2018-11-01<br/>"
+        f"<br/>"
+        f"/api/v1.0/start_date/end_date<br/>"
+        f"----- Example: /api/v1.0/2018-11-01/2018-11-30<br/>"
     )
 
 @app.route("/api/v1.0/precipitation")
